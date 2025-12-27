@@ -21,7 +21,7 @@ The design receives formatted UART commands, parses RGB values, and drives onboa
 ---
 
 ## Micro Architecture – User Interface
-![User Interface](images\image-1.png)
+![User Interface](images/image-1.png)
 
 ### Key Concept:
 - When a valid message is received from the RX Phaser, a MUX loads the new data into internal registers.
@@ -34,17 +34,17 @@ The design receives formatted UART commands, parses RGB values, and drives onboa
 ## Testbench & Simulations
 
 ### Receiving RGB and LED commands and displaying them on the seven-segment display
-![UART RX Simulation](images\image-2.png)
+![UART RX Simulation](images/image-2.png)
 
 ### PWM Signals
-![PWM Signals](images\image-3.png)
+![PWM Signals](images/image-3.png)
 
 Simulations verify correct UART reception, message parsing, and PWM duty-cycle generation, including rejection of invalid packets.
 
 ---
 
 ## Elaborated Design
-![Elaborated Design](images\image-4.png)
+![Elaborated Design](images/image-4.png)
 
 - Clean hierarchy
 - No unconnected logic
@@ -57,4 +57,5 @@ Simulations verify correct UART reception, message parsing, and PWM duty-cycle g
 This project implements a complete UART-controlled RGB LED PWM system on FPGA.  
 The design combines reliable UART RX reception, ASCII message parsing, sRGB to linear conversion using a gamma table, and parameterized PWM generation.  
 The system was fully verified in simulation and validated on hardware, demonstrating stable LED control and user interaction.
+
 
