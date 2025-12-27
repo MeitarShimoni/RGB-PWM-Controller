@@ -59,3 +59,4 @@ The design combines reliable UART RX reception, ASCII message parsing, sRGB to l
 The system was fully verified in simulation and validated on hardware, demonstrating stable LED control and user interaction.
 
 
+
