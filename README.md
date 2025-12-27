@@ -4,11 +4,11 @@ UART-controlled RGB LED PWM system implemented on the Nexys A7 FPGA.
 The design receives formatted UART commands, parses RGB values, and drives onboard RGB LEDs using PWM with perceptually correct brightness.
 
 ### Demo 
-![alt text](images\lab6_demo.gif)
+![alt text](images/lab6_demo.gif)
 ---
 
 ## Top Level Micro Architecture
-![Micro Architecture](images\image.png)
+![Micro Architecture](images/image.png)
 
 ### Components:
 - RX Phaser
@@ -57,3 +57,4 @@ Simulations verify correct UART reception, message parsing, and PWM duty-cycle g
 This project implements a complete UART-controlled RGB LED PWM system on FPGA.  
 The design combines reliable UART RX reception, ASCII message parsing, sRGB to linear conversion using a gamma table, and parameterized PWM generation.  
 The system was fully verified in simulation and validated on hardware, demonstrating stable LED control and user interaction.
+
